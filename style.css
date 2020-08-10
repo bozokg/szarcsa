@@ -1,0 +1,892 @@
+
+body{
+    background: white;
+    height: 100%;
+    /*background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+}
+
+#hunbtn{
+    background-image: url(hunflag.jpg);
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    border: none;
+    width: 40px;
+    height: 24px;
+}
+#engbtn{
+    background-image: url(ENG_flag.jpg);
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    border: none;
+    width: 40px;
+    height: 24px;
+
+}
+
+
+
+/*
+header{
+    position: static;
+    background-image: url(./pics/banner.png);
+    background-size: 100% 124px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    padding-top: 122px;
+}
+*/
+/*
+section{
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}*/
+/* index oldal css*/
+#slide-1 {background-color: white; width: 100%; position: static; }
+
+#slide-1 .content {
+    color: #fff;
+    text-align: left;
+    content: normal;
+    font-weight: bold;
+    padding: 0 0 0 0;
+    width: 80%;
+}
+#slide-2 {width: 100%; }
+
+.content{
+    position: fixed;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0 0 0;
+
+}
+
+.ind_first_content{
+    position: relative;
+    top: auto;
+    border: 1px;
+    background-position: center;
+    image-rendering: optimizeQuality;
+    margin: auto;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40%;
+}
+
+
+.ind_other_content{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    image-rendering: optimizeQuality;
+    box-sizing: border-box;
+
+}
+
+/* indexen lévő drop-down lenyíló*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.hover01 figure img {
+    cursor: pointer;
+    max-width: 300px;
+    max-height: 200px;
+    display: inline-block;
+    object-fit: contain;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+    cursor: pointer;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+}
+/*
+-webkit-transform: scale(1.3);
+    transform: scale(1.3);
+*/
+
+figure {
+
+    position: relative;
+    display: block;
+    object-fit: contain;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 0;
+    padding: auto;
+    /*background: #fff;*/
+    overflow: hidden;
+}
+
+
+.columnroom div {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 5% 5%;   /*margin: 0 0 0 25px;*/
+    padding: auto;
+}
+.csmgamen{
+    position: relative;
+
+   /* float: left;*/
+    width: 300px;
+    height: 200px;
+    margin: 15px 15px 15px;
+    /*display: table;*/
+    display: inline-block;
+clear:both;
+
+}
+
+.columnroom {
+
+    margin: 15px 15px 15px;
+    padding: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.columnroom:last-child {
+    padding-bottom: 60px;
+}
+.columnroom::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.columnroom div:first-child {
+    margin-left: 0;
+}
+
+
+/*index videó rész*/
+
+.indvideo{
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+/*automata slideshow*/
+.autosldshow{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /*max-height: 50px;*/
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+
+
+}
+
+
+
+.autoshow{
+    width: 100%;
+    height: 315px;
+
+}
+
+/*indexen lévő drop-down lenyíló vége*/
+
+/*Index oldal vége*/
+
+#cim{
+    padding: 50px auto;
+    font-size: 800%;
+    margin:  20px 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px auto;
+    overflow: hidden;
+    background-color: #333;
+    position: static;
+}
+
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+/*
+.header{
+    /*padding: 10px auto;
+    /*padding-top: 20px;
+    background: #555;
+    color: #f1f1f1;
+    float: right;
+    position: fixed;
+
+    transition: top 0.3s;
+
+}*/
+
+.headstyle{
+    background: #555;
+
+    color: #f1f1f1;
+    text-align: center;
+
+
+
+}
+
+.loginline{
+
+    position: static;
+
+    float: right;
+    width: 100%;
+
+    z-index: 1;
+
+
+
+}
+.loginline a{
+    float: right;
+    display: block;
+
+    text-align: center;
+    padding-right: 1%;
+    text-decoration: none;
+}
+
+.menu
+{
+    padding: 10px auto;
+    /*padding-top: 20px;*/
+    background: #555;
+    color: #f1f1f1;
+    z-index: 2;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/*Galery: */
+
+.galery_slideshow{
+    width: auto;
+    height: auto;
+    align-items: center;
+    display: inline-block;
+    object-fit: scale-down;
+    overflow: hidden;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+
+}
+.galery_autoslide{
+    /*display: block;*/
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    padding-left: 15px;
+
+
+}
+
+
+
+.galery_row {
+    display: flex;
+}
+
+.galery_column {
+    flex: 33.33%;
+    padding: 5px;
+}
+/*
+.sld1 .sld2{
+
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 0 25px;
+    padding: 0;
+
+}
+*/
+/*
+.sld1 .sld2 div {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 0 0 0 25px;
+    padding: 0;
+}*/
+
+.row > .column {
+    padding: 0 8px;
+    size: 100px 70px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    align-content: center;
+    width: auto;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.ind_first_content_cont {
+
+    display: none;
+    position: fixed;
+    width: 40%;
+    height: 40%;
+
+
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+    width: 60%;
+    height: 60%;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+aside{
+
+    float:right;
+    width: 30%;
+
+}
+
+
+/*galery slideshow*/
+*{box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides1, .mySlides2 {
+    display: none;
+    width: 100%;
+    height: 40%;
+
+    align-items: center;
+    justify-content: center;
+    max-height: 40%;
+    position: relative;
+}
+.mySlides1 img{
+/* object-fit: contain;*/
+   /* animation: fstslide 4s infinite;*/
+ height: 40%;
+
+    width: 100%;
+    /*overflow: auto;*/
+}
+.prev:active{
+    animation: fstslide 4s;
+
+}
+@keyframes fstslide{0%{opacity:0.4}50%{opacity:1}100%{opacity:0.6}}
+/*@keyframes scndslide{10%{opacity:1}20%{opacity:0.9}30%{opacity:0.8}40%{opacity:0.7}50%{opacity:0.6}60%{opacity:0.5}70%{opacity:0.4}80%{opacity:0.3}90%{opacity:0.2}100%{opacity:0.1}}*/
+@keyframes scndslide{0%{opacity:0}50%{opacity:1}100%{opacity:0}
+    0% { transform: translateY(-30px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(50px); }
+    }
+.mySlides2 img{
+    animation: scndslide 6s ;
+
+    height: 40%;
+    width: 100%;
+
+}
+
+
+/*img {vertical-align: middle;}*/
+
+.slideshow-container {
+    width: 100%;
+    max-height: 20%;
+    object-fit: contain;
+   /* box-sizing: border-box;*/
+    display: block;
+    position: relative;
+
+    /*object-fit: contain;*/
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size*/
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+/*Book.html css*/
+#form_aside{
+padding-left: 2%;
+    float: left ;
+    width: auto;
+    max-width: 80%;
+    position: static;
+}
+
+#book_form{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: auto;
+    max-width: 90%;
+    position: static;
+}
+
+
+.rooms_content{
+    position: relative;
+
+    padding-left: 5%;
+    width: auto;
+
+}
+
+/*Contact page style*/
+.contact_form{
+    margin-left: auto ;
+    margin-right: auto;
+    width: auto;
+    max-width: 45%;
+
+}
+
+.fisrt_table_content{
+
+    float: left;
+
+}
+.font_size{
+    object-fit: cover;
+    position: relative;
+    display: block;
+    width: 100%;
+    /*margin: 5px;*/
+    resize: none;
+    transition: 0.7s;
+    border-radius: 10px;
+   /* padding-left: 5px;
+    padding-right: 5px;*/
+   outline: thin;
+}
+
+.mappoz{
+
+    padding-top: 5%;
+    width: 100%;
+}
+
+.fb-page{
+
+    float: right;
+    max-width: 30%;
+}
+
+.message_button{
+    border-radius: 10px;
+    transition: 0.7s;
+    padding-left: 5px;
+    background-color: #f9f9f9;
+    height: 20px;
+    margin: 2px ;
+
+}
+.message_button:hover{
+
+    outline: #0a19ff ;
+}
+
+.label_1{
+    border-radius: 10px;
+    transition: 0.7s;
+    padding-left: 5px;
+    background-color: #f9f9f9;
+    height: 20px;
+    margin: 2px ;
+
+}
+
+.label_1:hover{
+    outline: #0a19ff ;
+
+}
+
+table tr th{
+
+text-align: left;
+
+}
+
+/*popup test*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.totopbtn{
+
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 5;
+   /* border: none;
+    outline: none;*/
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.totopbtn:hover{
+    /*background-color: #555;*/
+    background-color: white;
+    color: grey;
+
+    animation: upbtnhover 2s infinite;
+}
+
+@keyframes upbtnhover{0%{opacity:1}50%{opacity:0.50}100%{opacity:1}
+    from { transform: translateY(0px); }
+    to { transform: translateY(-20px); }
+}
+
+.show src{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+/* book.php oldalon az eldöntendő gomb:*/
+
